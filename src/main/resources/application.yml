@@ -19,11 +19,11 @@ spring:
         - id: customer
           uri: http://localhost:8083
           predicates:
-            - Path=/custormers/** /myPages/**
+            - Path=/custormers/**,/myPages/**
         - id: bookInventory
           uri: http://localhost:8084
           predicates:
-            - Path=/books/**/deliverables/** 
+            - Path=/books/**,/deliverables/** 
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -54,11 +54,11 @@ spring:
         - id: customer
           uri: http://customer:8080
           predicates:
-            - Path=/custormers/** /myPages/**
+            - Path=/custormers/**,/myPages/**
         - id: bookInventory
           uri: http://bookInventory:8080
           predicates:
-            - Path=/books/**/deliverables/** 
+            - Path=/books/**,/deliverables/** 
       globalcors:
         corsConfigurations:
           '[/**]':
