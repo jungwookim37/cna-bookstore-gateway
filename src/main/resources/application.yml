@@ -56,9 +56,9 @@ spring:
           predicates:
             - Path=/custormers/**,/myPages/**
         - id: bookInventory
-          uri: http://bookInventory:8080
+          uri: http://bookinventory:8080
           predicates:
-            - Path=/books/**,/deliverables/** 
+            - Path=/books/**,/deliverables/**,/stockInputs/** 
       globalcors:
         corsConfigurations:
           '[/**]':
