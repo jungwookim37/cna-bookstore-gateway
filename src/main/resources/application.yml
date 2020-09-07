@@ -23,7 +23,7 @@ spring:
         - id: bookInventory
           uri: http://localhost:8084
           predicates:
-            - Path=/books/**,/deliverables/** 
+            - Path=/books/**,/deliverables/**,/stockInputs/**  
       globalcors:
         corsConfigurations:
           '[/**]':
